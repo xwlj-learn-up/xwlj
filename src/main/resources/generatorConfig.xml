@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration
+        PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+        "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+
+<generatorConfiguration>
+
+    <!-- MySQLJar -->
+    <classPathEntry location="G:\repo\mysql\mysql-connector-java\5.1.40\mysql-connector-java-5.1.40.jar"/>
+
+
+    <context id="myConfig">
+
+        <!--去掉自动产生的注释-->
+       <!-- <commentGenerator>
+            <property name="suppressAllComments" value="true"/>
+        </commentGenerator>-->
+
+        <jdbcConnection driverClass="com.mysql.jdbc.Driver"
+                        connectionURL="jdbc:mysql://localhost:3306/xwlj"
+                        userId="root"
+                        password="123456"/>
+
+        <!-- POJO -->
+        <javaModelGenerator targetPackage="tk.xwlj666.pojo" targetProject="src/main/java"></javaModelGenerator>
+
+        <!--&lt;!&ndash; XML映射文件 &ndash;&gt;-->
+        <!--<sqlMapGenerator targetPackage="mapper" targetProject="src/main/resources"></sqlMapGenerator>-->
+
+        <!--&lt;!&ndash; Mapper接口 &ndash;&gt;-->
+        <!--<javaClientGenerator type="XMLMAPPER" targetPackage="com.kaishengit.dao"-->
+                             <!--targetProject="src/main/java"></javaClientGenerator>-->
+
+        <table tableName="user" domainObjectName="User"
+               enableUpdateByExample="false" enableSelectByExample="false"
+               enableDeleteByExample="false" enableCountByExample="false">
+
+        </table>
+    </context>
+</generatorConfiguration>
+        

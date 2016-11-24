@@ -1,0 +1,75 @@
+body {
+  padding-top: 50px;
+}
+#content{
+	min-height:588px;
+	}
+.starter-template {
+  padding: 40px 15px;
+  text-align: center;
+}
+    nav{
+    background-color:#66CCFF;
+    height:60px;
+    }
+    .navbar-brand{
+    height:60px;
+    }
+    #navbar{
+    background-color:rgba(102,204,255,0.9);
+    }
+    #navbar ul{
+    margin-left:60px;
+    }
+    #navbar ul li{
+    height:60px;
+    line-height:60px;
+    }
+    #navbar ul li a{
+     	padding-bottom: 20px;
+    	padding-top: 20px;   
+    }
+    .nav > li > a:focus, .nav > li > a:hover {
+    background-color: #3FBFFF;
+    text-decoration: none;
+	}
+	.active{
+	background-color: #3FBFFF;
+	}
+	.icon-reorder{
+	color:#1358D8 	;
+	}
+	#content{
+	margin-top:25px;
+	}
+	.footer{
+	width:100%;
+	height:60px;
+	background-color:#66CCFF;
+	}
+
+.login-wrapper {
+    width: 300px;
+    background-color: #fff;
+    margin-top: 100px;
+    border-radius: 3px;
+    box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+}
+
+.login-wrapper form {
+    padding: 0px 10px;
+}
+
+.login-wrapper form legend {
+    text-align: center;
+    font-size: 16px;
+}
+
+.login-wrapper form input {
+    display: block;
+    width: 265px;
+}
+
+.login-wrapper form .btns {
+    text-align: center;
+}
